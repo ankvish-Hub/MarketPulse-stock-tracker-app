@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MarketPulse",
-  description: "Track Real-Time Stock Prices, News, and Insights, All in One Place.",
+  title: "Signalist",
+  description: "Track real-time stock prices, get personalized alerts and explore detailed company insights.",
 };
 
 export default function RootLayout({
