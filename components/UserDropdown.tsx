@@ -1,5 +1,6 @@
 'use client';
 
+
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -15,16 +16,18 @@ import NavItems from "@/components/Navitems";
 import {useRouter} from "next/navigation";
 import {Button} from "@/components/ui/button";
 import {LogOut} from "lucide-react";
+import { signOut } from "@/lib/actions/auth.actions";
 
 
-const UserDropdown = () => {
+const UserDropdown = ({user}: {user: User}) => {
     const router = useRouter();
 
     const handleSignOut = async () => {
+        await signOut();
         router.push("/sign-in");
     }
 
-    const user = { name: 'Ankit Vishwakarma', email: 'ankvish1102@gmail.com' };
+    
 
     return (
         <DropdownMenu>
