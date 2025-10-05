@@ -80,6 +80,8 @@ declare global {
         buttonLabel?: string;
         buttonVariant?: 'primary' | 'secondary';
         className?: string;
+        label?: string;
+        
     };
 
     type AlertFormData = {

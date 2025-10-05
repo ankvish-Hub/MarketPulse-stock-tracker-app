@@ -16,6 +16,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MarketPulse",
   description: "Track real-time stock prices, get personalized alerts and explore detailed company insights.",
+  icons: {
+    icon: "/public/assets/icons/logo.svg", // ← yahaan apne file ka naam likho
+  }, // public folder ke andar ka path
 };
 
 export default function RootLayout({
